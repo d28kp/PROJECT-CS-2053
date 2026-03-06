@@ -25,6 +25,7 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 		# Update facing direction for animations
 		facing_right = direction > 0
+		sprite.flip_h = direction < 0
 	else:
 		# Gradually slow down when no direction is pressed
 		velocity.x = move_toward(velocity.x, 0, SPEED)
@@ -35,13 +36,13 @@ func _physics_process(delta):
 
 	if not is_on_floor():
 		# Jumping/Falling state
-		anim_to_play = "jumping_right" if facing_right else "jumping_left"
+		anim_to_play = "jump"
 	elif direction == 0:
 		# Idle/Standing state
-		anim_to_play = "standing_right" if facing_right else "standing_left"
+		anim_to_play = "idle"
 	else:
 		# Walking/Running state
-		anim_to_play = "running_right" if facing_right else "running_left"
+		anim_to_play = "run"
 
 	# ONLY call play() if the animation has actually changed.
 	# This prevents the animation from "restarting" every frame, which causes flickering.
