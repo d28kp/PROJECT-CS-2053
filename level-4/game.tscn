@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkuynb57mqibe"]
+
+[ext_resource type="Script" uid="uid://dj8lge20gvofb" path="res://game.gd" id="1_7jktm"]
+[ext_resource type="PackedScene" uid="uid://ji8ee03mgoe7" path="res://player.tscn" id="1_e2o6t"]
+[ext_resource type="Texture2D" uid="uid://4affoxp2ll2g" path="res://Space.jpg" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://b5jt2dp4shins" path="res://meteor.tscn" id="3_feb5d"]
+[ext_resource type="Script" uid="uid://qkaa2icb6my5" path="res://meteor_spawn.gd" id="4_fc0e3"]
+
+[node name="Game" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_7jktm")
+
+[node name="Player" parent="." instance=ExtResource("1_e2o6t")]
+position = Vector2(23, 77)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(645, 359)
+scale = Vector2(2.50389, 1.99722)
+texture = ExtResource("2_e2o6t")
+
+[node name="MeteorSpawn" type="Node2D" parent="."]
+script = ExtResource("4_fc0e3")
+meteor_scene = ExtResource("3_feb5d")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="StartLabel" type="Label" parent="UI"]
+offset_left = 264.0
+offset_top = 150.0
+offset_right = 1016.0
+offset_bottom = 570.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "GET READY!
+Time limit: 90 seconds
+Meteors to destroy: 12
+Press SPACE to Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Msg" type="Label" parent="UI"]
+offset_left = 387.0
+offset_top = 143.0
+offset_right = 876.0
+offset_bottom = 383.0
+
+[node name="Ammo" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Timer" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
