@@ -6,6 +6,7 @@ var magazine_size = 7
 var bullets_left = 7
 var shoot_cooldown = 2.0
 var reload_time = 10.0
+var reload_time_remaining = 0.0
 
 var can_shoot = true
 var reloading = false
@@ -30,6 +31,9 @@ func _physics_process(delta):
 	check_collision()
 
 func _process(delta):
+	if reloading:
+		reload_time_remaining = max(reload_time_remaining - delta, 0.0)
+	get_tree().current_scene.update_ammo_ui(bullets_left, reloading, reload_time_remaining)
 	if Input.is_action_just_pressed("shoot"):
 		shoot()
 
@@ -57,6 +61,7 @@ func shoot():
 
 func reload():
 	reloading = true
+	reload_time_remaining = reload_time 
 	await get_tree().create_timer(reload_time).timeout
 	bullets_left = magazine_size
 	reloading = false
