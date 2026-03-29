@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dkuynb57mqibe"]
+
+[ext_resource type="Script" uid="uid://dj8lge20gvofb" path="res://game.gd" id="1_7jktm"]
+[ext_resource type="PackedScene" uid="uid://ji8ee03mgoe7" path="res://player.tscn" id="1_e2o6t"]
+[ext_resource type="Texture2D" uid="uid://4affoxp2ll2g" path="res://Space.jpg" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://b5jt2dp4shins" path="res://meteor.tscn" id="3_feb5d"]
+[ext_resource type="Script" uid="uid://qkaa2icb6my5" path="res://meteor_spawn.gd" id="4_fc0e3"]
+
+[node name="Game" type="Node2D" unique_id=1818974391]
+process_mode = 3
+script = ExtResource("1_7jktm")
+
+[node name="Player" parent="." unique_id=829427424 instance=ExtResource("1_e2o6t")]
+position = Vector2(23, 77)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1362059299]
+z_index = -1
+position = Vector2(645, 359)
+scale = Vector2(2.50389, 1.99722)
+texture = ExtResource("2_e2o6t")
+
+[node name="MeteorSpawn" type="Node2D" parent="." unique_id=1491145506]
+script = ExtResource("4_fc0e3")
+meteor_scene = ExtResource("3_feb5d")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1736829663]
+
+[node name="StartLabel" type="Label" parent="UI" unique_id=180198668]
+offset_left = 264.0
+offset_top = 150.0
+offset_right = 1016.0
+offset_bottom = 570.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "Get Ready!
+Meteors to shoot: 12
+Time between each shot: 2.0
+Bullets per magazine: 7
+Reload time: 10.0
+Press Space to shoot
+Press F to Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Msg" type="Label" parent="UI" unique_id=395289958]
+offset_left = 417.0
+offset_top = 244.0
+offset_right = 906.0
+offset_bottom = 484.0
+
+[node name="Ammo" type="Label" parent="UI" unique_id=878288897]
+anchors_preset = -1
+anchor_left = 0.92600006
+anchor_top = 0.95300007
+anchor_right = 0.97700006
+anchor_bottom = 0.96500003
+offset_left = -1161.28
+offset_top = 7.839966
+offset_right = -1178.56
+offset_bottom = 22.199951
+
+[node name="Timer" type="Label" parent="UI" unique_id=19443313]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 76.0
+offset_bottom = 39.0
+
+[node name="Reload" type="Label" parent="UI" unique_id=227132584]
+offset_left = 130.0
+offset_top = 690.0
+offset_right = 287.0
+offset_bottom = 729.0
+theme_override_colors/font_color = Color(0.705976, 0, 0.006311289, 1)
+theme_override_font_sizes/font_size = 16
+text = "Reloading..."
+
+[node name="Timer" type="Timer" parent="." unique_id=1613505839]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
