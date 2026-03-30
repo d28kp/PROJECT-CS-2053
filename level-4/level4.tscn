@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b5jt2dp4shins" path="res://meteor.tscn" id="3_feb5d"]
 [ext_resource type="Script" uid="uid://qkaa2icb6my5" path="res://meteor_spawn.gd" id="4_fc0e3"]
 
-[node name="Game" type="Node2D" unique_id=1818974391]
+[node name="Level-4" type="Node2D" unique_id=1818974391]
 process_mode = 3
 script = ExtResource("1_7jktm")
 

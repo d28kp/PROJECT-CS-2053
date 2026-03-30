@@ -23,7 +23,7 @@ Meteors to destroy: %d
 Bullets per magazine: %d
 Time between shots: %.1f seconds
 Reload time: %.1f seconds
-
+f
 Press F to Start""" % [time_left, total_meteors, player.magazine_size, player.shoot_cooldown, player.reload_time]
 
 func start_game():
