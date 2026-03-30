@@ -1,0 +1,369 @@
+[gd_scene load_steps=11 format=3 uid="uid://c83a00y68thbb"]
+
+[ext_resource type="Script" uid="uid://c23wdtv1qf38i" path="res://game.gd" id="1_frfw7"]
+[ext_resource type="Texture2D" uid="uid://b3166k25es6l4" path="res://road_0.png" id="2_ooxaj"]
+[ext_resource type="Texture2D" uid="uid://dm3qepj1pdon6" path="res://Screenshot 2026-03-09 145836.png" id="3_c6qac"]
+[ext_resource type="Script" uid="uid://dy738r6vuhvuo" path="res://player.gd" id="4_ht23p"]
+
+[sub_resource type="RectangleShape2D" id="CircleShape2D_tree_blocker"]
+size = Vector2(58, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rock_blocker"]
+size = Vector2(48, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
+size = Vector2(54, 54)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rules_panel"]
+bg_color = Color(0.0784314, 0.109804, 0.14902, 0.964706)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.988235, 0.784314, 0.258824, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rules_title"]
+bg_color = Color(0.952941, 0.662745, 0.129412, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.345098, 0.235294, 0.0941176, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rules_tip"]
+bg_color = Color(0.184314, 0.305882, 0.458824, 0.847059)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.462745, 0.737255, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Level-3" type="Node2D"]
+script = ExtResource("1_frfw7")
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Map"]
+texture_filter = 1
+position = Vector2(638, 369)
+rotation = 1.5708
+scale = Vector2(0.108608, 0.670356)
+texture = ExtResource("2_ooxaj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Map"]
+texture_filter = 1
+position = Vector2(638, 449)
+rotation = 1.5708
+scale = Vector2(0.0528491, 9.91045)
+texture = ExtResource("3_c6qac")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Map"]
+texture_filter = 1
+position = Vector2(638.785, 539)
+rotation = 1.5708
+scale = Vector2(0.131826, 0.66958)
+texture = ExtResource("2_ooxaj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Map"]
+texture_filter = 1
+position = Vector2(640, 184)
+rotation = 1.5708
+scale = Vector2(0.132042, 0.667324)
+texture = ExtResource("2_ooxaj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Map"]
+texture_filter = 1
+position = Vector2(638.569, 647.641)
+rotation = 1.5708
+scale = Vector2(0.086324, 9.87747)
+texture = ExtResource("3_c6qac")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Map"]
+texture_filter = 1
+position = Vector2(639, 283)
+rotation = 1.5708
+scale = Vector2(0.0567571, 9.86499)
+texture = ExtResource("3_c6qac")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Map"]
+texture_filter = 1
+position = Vector2(638.144, 70.0718)
+rotation = 1.5708
+scale = Vector2(0.093347, 9.84851)
+texture = ExtResource("3_c6qac")
+
+[node name="Props" type="Node2D" parent="Map"]
+
+[node name="TreeA" type="Node2D" parent="Map/Props"]
+position = Vector2(130, 72)
+
+[node name="Trunk" type="Polygon2D" parent="Map/Props/TreeA"]
+position = Vector2(0, 20)
+color = Color(0.454902, 0.27451, 0.133333, 1)
+polygon = PackedVector2Array(-8, -10, 8, -10, 8, 16, -8, 16)
+
+[node name="Leaves" type="Polygon2D" parent="Map/Props/TreeA"]
+color = Color(0.188235, 0.607843, 0.266667, 1)
+polygon = PackedVector2Array(0, -34, 28, -8, 18, 20, -18, 20, -28, -8)
+
+[node name="Blocker" type="StaticBody2D" parent="Map/Props/TreeA"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/TreeA/Blocker"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_tree_blocker")
+
+[node name="TreeB" type="Node2D" parent="Map/Props"]
+position = Vector2(1120, 78)
+
+[node name="Trunk" type="Polygon2D" parent="Map/Props/TreeB"]
+position = Vector2(0, 20)
+color = Color(0.454902, 0.27451, 0.133333, 1)
+polygon = PackedVector2Array(-8, -10, 8, -10, 8, 16, -8, 16)
+
+[node name="Leaves" type="Polygon2D" parent="Map/Props/TreeB"]
+color = Color(0.164706, 0.545098, 0.239216, 1)
+polygon = PackedVector2Array(0, -36, 30, -10, 20, 20, -20, 20, -30, -10)
+
+[node name="Blocker" type="StaticBody2D" parent="Map/Props/TreeB"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/TreeB/Blocker"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_tree_blocker")
+
+[node name="TreeC" type="Node2D" parent="Map/Props"]
+position = Vector2(174, 269)
+
+[node name="Trunk" type="Polygon2D" parent="Map/Props/TreeC"]
+position = Vector2(0, 20)
+color = Color(0.454902, 0.27451, 0.133333, 1)
+polygon = PackedVector2Array(-8, -10, 8, -10, 8, 16, -8, 16)
+
+[node name="Leaves" type="Polygon2D" parent="Map/Props/TreeC"]
+color = Color(0.180392, 0.576471, 0.254902, 1)
+polygon = PackedVector2Array(0, -34, 28, -8, 18, 20, -18, 20, -28, -8)
+
+[node name="Blocker" type="StaticBody2D" parent="Map/Props/TreeC"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/TreeC/Blocker"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_tree_blocker")
+
+[node name="RockA" type="Polygon2D" parent="Map/Props"]
+position = Vector2(1080, 300)
+color = Color(0.509804, 0.537255, 0.552941, 1)
+polygon = PackedVector2Array(-24, 10, -12, -10, 18, -8, 30, 8, 6, 18, -18, 18)
+
+[node name="RockABlocker" type="StaticBody2D" parent="Map/Props"]
+position = Vector2(1080, 304)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/RockABlocker"]
+shape = SubResource("RectangleShape2D_rock_blocker")
+
+[node name="TreeD" type="Node2D" parent="Map/Props"]
+position = Vector2(1203, 438)
+scale = Vector2(0.800005, 0.68)
+
+[node name="Trunk" type="Polygon2D" parent="Map/Props/TreeD"]
+position = Vector2(0, 20)
+color = Color(0.454902, 0.27451, 0.133333, 1)
+polygon = PackedVector2Array(-8, -10, 8, -10, 8, 16, -8, 16)
+
+[node name="Leaves" type="Polygon2D" parent="Map/Props/TreeD"]
+color = Color(0.180392, 0.596078, 0.262745, 1)
+polygon = PackedVector2Array(0, -34, 28, -8, 18, 20, -18, 20, -28, -8)
+
+[node name="Blocker" type="StaticBody2D" parent="Map/Props/TreeD"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/TreeD/Blocker"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_tree_blocker")
+
+[node name="RockB" type="Polygon2D" parent="Map/Props"]
+position = Vector2(190, 478)
+color = Color(0.466667, 0.486275, 0.501961, 1)
+polygon = PackedVector2Array(-22, 8, -10, -12, 14, -12, 28, 6, 8, 18, -16, 18)
+
+[node name="RockBBlocker" type="StaticBody2D" parent="Map/Props"]
+position = Vector2(190, 482)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/RockBBlocker"]
+shape = SubResource("RectangleShape2D_rock_blocker")
+
+[node name="TreeE" type="Node2D" parent="Map/Props"]
+position = Vector2(177, 647)
+
+[node name="Trunk" type="Polygon2D" parent="Map/Props/TreeE"]
+position = Vector2(0, 20)
+color = Color(0.454902, 0.27451, 0.133333, 1)
+polygon = PackedVector2Array(-8, -10, 8, -10, 8, 16, -8, 16)
+
+[node name="Leaves" type="Polygon2D" parent="Map/Props/TreeE"]
+color = Color(0.188235, 0.607843, 0.266667, 1)
+polygon = PackedVector2Array(0, -36, 30, -10, 20, 20, -20, 20, -30, -10)
+
+[node name="Blocker" type="StaticBody2D" parent="Map/Props/TreeE"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/TreeE/Blocker"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_tree_blocker")
+
+[node name="TreeF" type="Node2D" parent="Map/Props"]
+position = Vector2(1112, 648)
+
+[node name="Trunk" type="Polygon2D" parent="Map/Props/TreeF"]
+position = Vector2(0, 20)
+color = Color(0.454902, 0.27451, 0.133333, 1)
+polygon = PackedVector2Array(-8, -10, 8, -10, 8, 16, -8, 16)
+
+[node name="Leaves" type="Polygon2D" parent="Map/Props/TreeF"]
+color = Color(0.156863, 0.533333, 0.235294, 1)
+polygon = PackedVector2Array(0, -34, 28, -8, 18, 20, -18, 20, -28, -8)
+
+[node name="Blocker" type="StaticBody2D" parent="Map/Props/TreeF"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Props/TreeF/Blocker"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_tree_blocker")
+
+[node name="CarContainer" type="Node2D" parent="."]
+
+[node name="StartMarker" type="Marker2D" parent="."]
+position = Vector2(576, 651)
+
+[node name="GoalMarker" type="Marker2D" parent="."]
+position = Vector2(638, 70)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(575, 644)
+scale = Vector2(0.519999, 0.520001)
+collision_mask = 2
+script = ExtResource("4_ht23p")
+
+[node name="PersonVisual" type="Node2D" parent="Player"]
+
+[node name="Body" type="Polygon2D" parent="Player/PersonVisual"]
+position = Vector2(0, 8)
+color = Color(0.211765, 0.427451, 0.807843, 1)
+polygon = PackedVector2Array(-10, -12, 10, -12, 12, 14, -12, 14)
+
+[node name="Head" type="Polygon2D" parent="Player/PersonVisual"]
+position = Vector2(0, -16)
+color = Color(0.980392, 0.835294, 0.67451, 1)
+polygon = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[node name="LegLeft" type="Polygon2D" parent="Player/PersonVisual"]
+position = Vector2(-6, 26)
+color = Color(0.145098, 0.145098, 0.145098, 1)
+polygon = PackedVector2Array(-3, -8, 3, -8, 3, 8, -3, 8)
+
+[node name="LegRight" type="Polygon2D" parent="Player/PersonVisual"]
+position = Vector2(6, 26)
+color = Color(0.145098, 0.145098, 0.145098, 1)
+polygon = PackedVector2Array(-3, -8, 3, -8, 3, 8, -3, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-2, 4)
+shape = SubResource("RectangleShape2D_player")
+
+[node name="HUD" type="Label" parent="."]
+offset_left = 697.0
+offset_top = 633.0
+offset_right = 1222.0
+offset_bottom = 676.0
+theme_override_font_sizes/font_size = 26
+text = "Score: 0 "
+
+[node name="RulesPopup" type="CanvasLayer" parent="."]
+
+[node name="Dim" type="ColorRect" parent="RulesPopup"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.0196078, 0.0196078, 0.0392157, 0.52)
+
+[node name="Panel" type="Panel" parent="RulesPopup"]
+offset_left = 194.0
+offset_top = 99.0
+offset_right = 1074.0
+offset_bottom = 499.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rules_panel")
+
+[node name="TitleBadge" type="Panel" parent="RulesPopup/Panel"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 16.0
+offset_right = 640.0
+offset_bottom = 82.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rules_title")
+
+[node name="TitleText" type="Label" parent="RulesPopup/Panel/TitleBadge"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 10.0
+offset_right = 392.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.105882, 0.0901961, 0.0627451, 1)
+theme_override_font_sizes/font_size = 34
+text = "HOW TO PLAY"
+horizontal_alignment = 1
+
+[node name="RulesText" type="Label" parent="RulesPopup/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 93.0
+offset_top = 97.0
+offset_right = -110.0
+offset_bottom = -81.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.937255, 0.956863, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "- Avoid all moving cars
+- Reach the top = +1 point
+- Crash into a car =  -1 point
+- Reach SCORE 5 to clear the level
+-Press 'R' to start"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TipBadge" type="Panel" parent="RulesPopup/Panel"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 330.0
+offset_right = 660.0
+offset_bottom = 378.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rules_tip")
+
+[node name="TipText" type="Label" parent="RulesPopup/Panel/TipBadge"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 432.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.835294, 0.941176, 1, 1)
+theme_override_font_sizes/font_size = 22
+text = "Tip: Safe zones have trees and rocks!"
+horizontal_alignment = 1
