@@ -1,0 +1,1487 @@
+[gd_scene load_steps=79 format=3 uid="uid://kbkjk0l1tghn"]
+
+[ext_resource type="Script" uid="uid://c6w57o26knrya" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://cnovjb8l6fudw" path="res://player.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cen3dxqonfn0" path="res://FoogyMazeBackground.png" id="3_h2yge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+size = Vector2(10, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+size = Vector2(800, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(800, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(20, 600)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(20, 600)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
+size = Vector2(10, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kek77"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
+size = Vector2(10, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_efxa6"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dg77c"]
+size = Vector2(10, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(10, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w48qg"]
+size = Vector2(10, 149.355)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vivmo"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cqfq"]
+size = Vector2(10, 91)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yaehf"]
+size = Vector2(10, 400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_074og"]
+size = Vector2(10, 236)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cegan"]
+size = Vector2(400, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_82xsv"]
+size = Vector2(10, 289)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_getpj"]
+size = Vector2(140, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryguw"]
+size = Vector2(130, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d13ii"]
+size = Vector2(10, 95)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1u8w0"]
+size = Vector2(10, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0odxb"]
+size = Vector2(10, 95)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lswn8"]
+size = Vector2(120, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6jrf"]
+size = Vector2(170, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuqvo"]
+size = Vector2(55, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsp4k"]
+size = Vector2(300, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq58d"]
+size = Vector2(10, 395)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_seu75"]
+size = Vector2(10, 90)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htxhm"]
+size = Vector2(110, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jq2sk"]
+size = Vector2(10, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4k2k6"]
+size = Vector2(10, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rl1p"]
+size = Vector2(200, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ok6jj"]
+size = Vector2(10, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_facbu"]
+size = Vector2(37, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1qrp"]
+size = Vector2(100, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_come4"]
+size = Vector2(94.5, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h8e4i"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4lmeg"]
+size = Vector2(200, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0cp0l"]
+size = Vector2(110, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2t1y"]
+size = Vector2(10, 200)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gngh3"]
+size = Vector2(10, 125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0n3wm"]
+size = Vector2(10, 95)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnost"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnkbs"]
+size = Vector2(10, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6a44"]
+size = Vector2(30, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0cbny"]
+size = Vector2(10, 200)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hrvbo"]
+size = Vector2(10, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uypp3"]
+size = Vector2(10, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blkrb"]
+size = Vector2(249, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abqjc"]
+size = Vector2(286, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iyjs"]
+size = Vector2(11, 140)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4w656"]
+size = Vector2(10, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e71vb"]
+size = Vector2(10, 102)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnkwl"]
+size = Vector2(80, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vke2r"]
+size = Vector2(30, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uit24"]
+size = Vector2(10, 201.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruth0"]
+size = Vector2(10, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm4vd"]
+size = Vector2(10, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjyto"]
+size = Vector2(23, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sm6fg"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b17eg"]
+size = Vector2(170, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ntx8l"]
+size = Vector2(308, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uatky"]
+size = Vector2(110, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rqtf5"]
+size = Vector2(10, 102)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vm84"]
+size = Vector2(100, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wu3dr"]
+size = Vector2(10, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cyx1q"]
+size = Vector2(10, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0dhbp"]
+size = Vector2(10, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jx0wj"]
+size = Vector2(120, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kkkcx"]
+size = Vector2(10, 55)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
+size = Vector2(15, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
+size = Vector2(15, 15)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0.365897, 0.11598, 0.118094, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0xm2m")
+metadata/_edit_vertical_guides_ = [11.0]
+metadata/_edit_horizontal_guides_ = [-64148.0, 20.0]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(50, 50)
+script = ExtResource("1_ig7tw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="ColorRect" type="ColorRect" parent="Player"]
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
+color = Color(1, 0.639216, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="WallTop" type="StaticBody2D" parent="Walls"]
+position = Vector2(400, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallTop"]
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/WallTop"]
+offset_left = -400.0
+offset_top = -10.0
+offset_right = 400.0
+offset_bottom = 10.0
+
+[node name="WallBottom" type="StaticBody2D" parent="Walls"]
+position = Vector2(400, 590)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallBottom"]
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/WallBottom"]
+offset_left = -400.0
+offset_top = -10.0
+offset_right = 400.0
+offset_bottom = 10.0
+
+[node name="WallLeft" type="StaticBody2D" parent="Walls"]
+position = Vector2(10, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallLeft"]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/WallLeft"]
+offset_left = -10.0
+offset_top = -300.0
+offset_right = 10.0
+offset_bottom = 300.0
+
+[node name="WallRight" type="StaticBody2D" parent="Walls"]
+position = Vector2(790, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallRight"]
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/WallRight"]
+offset_left = -10.0
+offset_top = -300.0
+offset_right = 10.0
+offset_bottom = 300.0
+
+[node name="MazeWall1" type="StaticBody2D" parent="Walls"]
+position = Vector2(180, 239)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall1"]
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall1"]
+offset_left = -75.0
+offset_top = -5.0
+offset_right = 75.0
+offset_bottom = 5.0
+
+[node name="MazeWall21" type="StaticBody2D" parent="Walls"]
+position = Vector2(180, 239)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall21"]
+position = Vector2(-32, -27)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall21"]
+offset_left = -107.0
+offset_top = -32.0
+offset_right = 44.0
+offset_bottom = -22.0
+
+[node name="MazeWall23" type="StaticBody2D" parent="Walls"]
+position = Vector2(180, 239)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall23"]
+position = Vector2(-57, -79)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall23"]
+offset_left = -132.0
+offset_top = -84.0
+offset_right = 18.0
+offset_bottom = -74.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall24" type="StaticBody2D" parent="Walls"]
+position = Vector2(180, 239)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall24"]
+position = Vector2(-56, -57)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall24"]
+offset_left = -130.0
+offset_top = -62.0
+offset_right = 20.0
+offset_bottom = -52.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall8" type="StaticBody2D" parent="Walls"]
+position = Vector2(347, 238)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall8"]
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall8"]
+offset_left = -75.0
+offset_top = -5.0
+offset_right = 75.0
+offset_bottom = 5.0
+
+[node name="MazeWall2" type="StaticBody2D" parent="Walls"]
+position = Vector2(110, 309)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall2"]
+shape = SubResource("RectangleShape2D_7mycd")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall2"]
+offset_left = -5.0
+offset_top = -75.0
+offset_right = 5.0
+offset_bottom = 75.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall7" type="StaticBody2D" parent="Walls"]
+position = Vector2(277, 308)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall7"]
+shape = SubResource("RectangleShape2D_7mycd")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall7"]
+offset_left = -5.0
+offset_top = -75.0
+offset_right = 5.0
+offset_bottom = 75.0
+
+[node name="MazeWall3" type="StaticBody2D" parent="Walls"]
+position = Vector2(180, 99)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall3"]
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall3"]
+offset_left = -75.0
+offset_top = -5.0
+offset_right = 75.0
+offset_bottom = 5.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall20" type="StaticBody2D" parent="Walls"]
+position = Vector2(180, 99)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall20"]
+position = Vector2(-31, 28)
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall20"]
+offset_left = -106.0
+offset_top = 23.0
+offset_right = 44.0
+offset_bottom = 33.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall10" type="StaticBody2D" parent="Walls"]
+position = Vector2(347, 98)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall10"]
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall10"]
+offset_left = -75.0
+offset_top = -5.0
+offset_right = 75.0
+offset_bottom = 5.0
+
+[node name="MazeWall4" type="StaticBody2D" parent="Walls"]
+position = Vector2(250, 169)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall4"]
+shape = SubResource("RectangleShape2D_4c57u")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall4"]
+offset_left = -5.0
+offset_top = -75.0
+offset_right = 5.0
+offset_bottom = 75.0
+
+[node name="MazeWall9" type="StaticBody2D" parent="Walls"]
+position = Vector2(417, 168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall9"]
+shape = SubResource("RectangleShape2D_4c57u")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall9"]
+offset_left = -5.0
+offset_top = -75.0
+offset_right = 5.0
+offset_bottom = 75.0
+
+[node name="MazeWall5" type="StaticBody2D" parent="Walls"]
+position = Vector2(180, 379)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall5"]
+position = Vector2(-45, -331)
+shape = SubResource("RectangleShape2D_efxa6")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall5"]
+offset_left = -120.0
+offset_top = -336.0
+offset_right = 30.0
+offset_bottom = -326.0
+
+[node name="MazeWall6" type="StaticBody2D" parent="Walls"]
+position = Vector2(347, 379)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall6"]
+shape = SubResource("RectangleShape2D_efxa6")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall6"]
+offset_left = -75.0
+offset_top = -5.0
+offset_right = 75.0
+offset_bottom = 5.0
+
+[node name="MazeWall11" type="StaticBody2D" parent="Walls"]
+position = Vector2(506, 312)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall11"]
+position = Vector2(9, -9)
+shape = SubResource("RectangleShape2D_dg77c")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall11"]
+offset_left = 4.0
+offset_top = -83.0
+offset_right = 14.0
+offset_bottom = 67.0
+
+[node name="MazeWall12" type="StaticBody2D" parent="Walls"]
+position = Vector2(506, 170)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall12"]
+position = Vector2(9, -16)
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall12"]
+offset_left = 4.0
+offset_top = -91.0
+offset_right = 14.0
+offset_bottom = 59.0
+
+[node name="MazeWall13" type="StaticBody2D" parent="Walls"]
+position = Vector2(449, 182)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall13"]
+position = Vector2(105, -11)
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall13"]
+offset_left = 100.0
+offset_top = -87.0
+offset_right = 110.0
+offset_bottom = 63.0
+
+[node name="MazeWall18" type="StaticBody2D" parent="Walls"]
+position = Vector2(449, 182)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall18"]
+position = Vector2(247, -11)
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall18"]
+offset_left = 240.0
+offset_top = -87.0
+offset_right = 252.0
+offset_bottom = 65.0
+
+[node name="MazeWall14" type="StaticBody2D" parent="Walls"]
+position = Vector2(449, 182)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall14"]
+position = Vector2(105, 135)
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall14"]
+offset_left = 100.0
+offset_top = 60.0
+offset_right = 110.0
+offset_bottom = 210.0
+
+[node name="MazeWall19" type="StaticBody2D" parent="Walls"]
+position = Vector2(449, 182)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall19"]
+position = Vector2(247, 134)
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall19"]
+offset_left = 240.0
+offset_top = 57.0
+offset_right = 252.0
+offset_bottom = 210.0
+
+[node name="MazeWall15" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall15"]
+position = Vector2(624, 100)
+shape = SubResource("RectangleShape2D_vivmo")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall15"]
+offset_left = 549.0
+offset_top = 95.0
+offset_right = 699.0
+offset_bottom = 105.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall16" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall16"]
+position = Vector2(624, 387)
+shape = SubResource("RectangleShape2D_vivmo")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall16"]
+offset_left = 549.0
+offset_top = 382.0
+offset_right = 699.0
+offset_bottom = 392.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall17" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall17"]
+position = Vector2(624, 243)
+shape = SubResource("RectangleShape2D_vivmo")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall17"]
+offset_left = 549.0
+offset_top = 238.0
+offset_right = 699.0
+offset_bottom = 248.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MazeWall22" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall22"]
+position = Vector2(219, 167.5)
+shape = SubResource("RectangleShape2D_2cqfq")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall22"]
+offset_left = 214.0
+offset_top = 122.0
+offset_right = 224.0
+offset_bottom = 212.0
+
+[node name="MazeWall25" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall25"]
+position = Vector2(52, 276)
+shape = SubResource("RectangleShape2D_yaehf")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall25"]
+offset_left = 47.0
+offset_top = 76.0
+offset_right = 57.0
+offset_bottom = 476.0
+
+[node name="MazeWallw26" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWallw26"]
+position = Vector2(78, 334)
+shape = SubResource("RectangleShape2D_074og")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWallw26"]
+offset_left = 73.0
+offset_top = 217.0
+offset_right = 83.0
+offset_bottom = 455.0
+
+[node name="MazeWall27" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall27"]
+position = Vector2(275, 406)
+shape = SubResource("RectangleShape2D_cegan")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall27"]
+offset_left = 75.0
+offset_top = 401.0
+offset_right = 475.0
+offset_bottom = 411.0
+color = Color(0.991785, 0.990761, 0.992286, 1)
+
+[node name="MazeWall28" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall28"]
+position = Vector2(452, 239.5)
+shape = SubResource("RectangleShape2D_82xsv")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall28"]
+offset_left = 447.0
+offset_top = 95.0
+offset_right = 457.0
+offset_bottom = 384.0
+
+[node name="MazeWall29" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall29"]
+position = Vector2(177, 379)
+shape = SubResource("RectangleShape2D_getpj")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall29"]
+offset_left = 107.0
+offset_top = 374.0
+offset_right = 247.0
+offset_bottom = 384.0
+
+[node name="MazeWall30" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall30"]
+position = Vector2(382, 350)
+shape = SubResource("RectangleShape2D_ryguw")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall30"]
+offset_left = 317.0
+offset_top = 345.0
+offset_right = 447.0
+offset_bottom = 355.0
+
+[node name="MazeWall31" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall31"]
+position = Vector2(140, 310)
+shape = SubResource("RectangleShape2D_d13ii")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall31"]
+offset_left = 135.0
+offset_top = 262.0
+offset_right = 145.0
+offset_bottom = 357.0
+
+[node name="MazeWall32" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall32"]
+position = Vector2(177, 333)
+shape = SubResource("RectangleShape2D_1u8w0")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall32"]
+offset_left = 172.0
+offset_top = 307.0
+offset_right = 182.0
+offset_bottom = 357.0
+
+[node name="MazeWall33" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall33"]
+position = Vector2(219, 311)
+shape = SubResource("RectangleShape2D_0odxb")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall33"]
+offset_left = 214.0
+offset_top = 263.0
+offset_right = 224.0
+offset_bottom = 358.0
+
+[node name="MazeWall34" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall34"]
+position = Vector2(195, 267)
+shape = SubResource("RectangleShape2D_lswn8")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall34"]
+offset_left = 135.0
+offset_top = 262.0
+offset_right = 255.0
+offset_bottom = 272.0
+
+[node name="MazeWall35" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall35"]
+position = Vector2(331, 135)
+shape = SubResource("RectangleShape2D_a6jrf")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall35"]
+offset_left = 246.0
+offset_top = 130.0
+offset_right = 416.0
+offset_bottom = 140.0
+
+[node name="MazeWall36" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall36"]
+position = Vector2(248, 303.5)
+shape = SubResource("RectangleShape2D_xuqvo")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall36"]
+offset_left = 220.0
+offset_top = 298.0
+offset_right = 276.0
+offset_bottom = 309.0
+
+[node name="MazeWall37" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall37"]
+position = Vector2(238, 75)
+shape = SubResource("RectangleShape2D_qsp4k")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall37"]
+offset_left = 88.0
+offset_top = 70.0
+offset_right = 388.0
+offset_bottom = 80.0
+
+[node name="MazeWall38" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall38"]
+position = Vector2(479, 291.5)
+shape = SubResource("RectangleShape2D_kq58d")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall38"]
+offset_left = 474.0
+offset_top = 94.0
+offset_right = 484.0
+offset_bottom = 489.0
+
+[node name="MazeWall39" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall39"]
+position = Vector2(312, 310)
+shape = SubResource("RectangleShape2D_seu75")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall39"]
+offset_left = 307.0
+offset_top = 265.0
+offset_right = 317.0
+offset_bottom = 355.0
+
+[node name="MazeWall40" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall40"]
+position = Vector2(372, 270)
+shape = SubResource("RectangleShape2D_htxhm")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall40"]
+offset_left = 317.0
+offset_top = 265.0
+offset_right = 427.0
+offset_bottom = 275.0
+
+[node name="MazeWall41" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall41"]
+position = Vector2(283, 188)
+shape = SubResource("RectangleShape2D_jq2sk")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall41"]
+offset_left = 278.0
+offset_top = 153.0
+offset_right = 288.0
+offset_bottom = 223.0
+
+[node name="MazeWall42" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall42"]
+position = Vector2(344, 183)
+shape = SubResource("RectangleShape2D_jq2sk")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall42"]
+offset_left = 339.0
+offset_top = 148.0
+offset_right = 349.0
+offset_bottom = 218.0
+
+[node name="MazeWall44" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall44"]
+position = Vector2(314, 198)
+shape = SubResource("RectangleShape2D_jq2sk")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall44"]
+offset_left = 309.0
+offset_top = 163.0
+offset_right = 319.0
+offset_bottom = 233.0
+
+[node name="MazeWall46" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall46"]
+position = Vector2(377, 187)
+shape = SubResource("RectangleShape2D_jq2sk")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall46"]
+offset_left = 372.0
+offset_top = 152.0
+offset_right = 382.0
+offset_bottom = 222.0
+
+[node name="Mazewall42" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Mazewall42"]
+position = Vector2(417, 73)
+shape = SubResource("RectangleShape2D_4k2k6")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/Mazewall42"]
+offset_left = 412.0
+offset_top = 53.0
+offset_right = 422.0
+offset_bottom = 93.0
+
+[node name="MazeWall43" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall43"]
+position = Vector2(345, 48)
+shape = SubResource("RectangleShape2D_0rl1p")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall43"]
+offset_left = 244.0
+offset_top = 43.0
+offset_right = 444.0
+offset_bottom = 53.0
+
+[node name="Mazewall44" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Mazewall44"]
+position = Vector2(205, 32)
+shape = SubResource("RectangleShape2D_ok6jj")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/Mazewall44"]
+offset_left = 200.0
+offset_top = 17.0
+offset_right = 210.0
+offset_bottom = 47.0
+
+[node name="MazeWall45" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall45"]
+position = Vector2(465.5, 99)
+shape = SubResource("RectangleShape2D_facbu")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall45"]
+offset_left = 447.0
+offset_top = 94.0
+offset_right = 484.0
+offset_bottom = 104.0
+
+[node name="MazeWall47" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall47"]
+position = Vector2(534, 420)
+shape = SubResource("RectangleShape2D_b1qrp")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall47"]
+offset_left = 484.0
+offset_top = 415.0
+offset_right = 584.0
+offset_bottom = 426.0
+
+[node name="MazeWall48" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall48"]
+position = Vector2(655.75, 420)
+shape = SubResource("RectangleShape2D_come4")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall48"]
+offset_left = 608.0
+offset_top = 415.0
+offset_right = 704.0
+offset_bottom = 425.0
+
+[node name="MazeWall49" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall49"]
+position = Vector2(496, 48)
+shape = SubResource("RectangleShape2D_h8e4i")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall49"]
+offset_left = 421.0
+offset_top = 43.0
+offset_right = 571.0
+offset_bottom = 53.0
+
+[node name="MazeWall50" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall50"]
+position = Vector2(522, 74)
+shape = SubResource("RectangleShape2D_4lmeg")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall50"]
+offset_left = 422.0
+offset_top = 69.0
+offset_right = 622.0
+offset_bottom = 79.0
+
+[node name="MazeWall51" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall51"]
+position = Vector2(701, 76)
+shape = SubResource("RectangleShape2D_0cp0l")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall51"]
+offset_left = 646.0
+offset_top = 71.0
+offset_right = 756.0
+offset_bottom = 81.0
+
+[node name="MazeWall52" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall52"]
+position = Vector2(726, 181)
+shape = SubResource("RectangleShape2D_d2t1y")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall52"]
+offset_left = 721.0
+offset_top = 81.0
+offset_right = 731.0
+offset_bottom = 281.0
+
+[node name="MazeWall53" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall53"]
+position = Vector2(751, 143.5)
+shape = SubResource("RectangleShape2D_gngh3")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall53"]
+offset_left = 746.0
+offset_top = 81.0
+offset_right = 756.0
+offset_bottom = 206.0
+
+[node name="MazeWall54" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall54"]
+position = Vector2(751, 281.5)
+shape = SubResource("RectangleShape2D_0n3wm")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall54"]
+offset_left = 746.0
+offset_top = 234.0
+offset_right = 756.0
+offset_bottom = 329.0
+
+[node name="MazeWall55" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall55"]
+position = Vector2(674, 48)
+shape = SubResource("RectangleShape2D_qnost")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall55"]
+offset_left = 599.0
+offset_top = 43.0
+offset_right = 749.0
+offset_bottom = 53.0
+
+[node name="MazeWall56" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall56"]
+position = Vector2(617, 63)
+shape = SubResource("RectangleShape2D_wnkbs")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall56"]
+offset_left = 612.0
+offset_top = 48.0
+offset_right = 622.0
+offset_bottom = 78.0
+
+[node name="MazeWall57" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall57"]
+position = Vector2(736, 279)
+shape = SubResource("RectangleShape2D_f6a44")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall57"]
+offset_left = 721.0
+offset_top = 274.0
+offset_right = 751.0
+offset_bottom = 284.0
+
+[node name="MazeWall58" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall58"]
+position = Vector2(726, 380)
+shape = SubResource("RectangleShape2D_0cbny")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall58"]
+offset_left = 721.0
+offset_top = 280.0
+offset_right = 731.0
+offset_bottom = 480.0
+
+[node name="MazeWall59" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall59"]
+position = Vector2(751, 58)
+shape = SubResource("RectangleShape2D_hrvbo")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall59"]
+offset_left = 746.0
+offset_top = 43.0
+offset_right = 756.0
+offset_bottom = 73.0
+
+[node name="MazeWall60" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/MazeWall60"]
+position = Vector2(53, 531)
+shape = SubResource("RectangleShape2D_uypp3")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/MazeWall60"]
+offset_left = 48.0
+offset_top = 511.0
+offset_right = 58.0
+offset_bottom = 551.0
+
+[node name="StaticBody2D15" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D15"]
+position = Vector2(197.5, 450)
+shape = SubResource("RectangleShape2D_blkrb")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D15"]
+offset_left = 49.0
+offset_top = 511.0
+offset_right = 298.0
+offset_bottom = 521.0
+
+[node name="StaticBody2D18" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D18"]
+position = Vector2(171, 481)
+shape = SubResource("RectangleShape2D_blkrb")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D18"]
+offset_left = 73.0
+offset_top = 445.0
+offset_right = 328.0
+offset_bottom = 455.0
+
+[node name="StaticBody2D19" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D19"]
+position = Vector2(173, 516)
+shape = SubResource("RectangleShape2D_blkrb")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D19"]
+offset_left = 47.0
+offset_top = 476.0
+offset_right = 297.0
+offset_bottom = 486.0
+
+[node name="StaticBody2D16" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D16"]
+position = Vector2(191, 547)
+shape = SubResource("RectangleShape2D_abqjc")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D16"]
+offset_left = 48.0
+offset_top = 542.0
+offset_right = 334.0
+offset_bottom = 552.0
+
+[node name="StaticBody2D17" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D17"]
+position = Vector2(329, 481)
+shape = SubResource("RectangleShape2D_6iyjs")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D17"]
+offset_left = 324.0
+offset_top = 411.0
+offset_right = 334.0
+offset_bottom = 551.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D"]
+position = Vector2(613, 455)
+shape = SubResource("RectangleShape2D_4w656")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D"]
+offset_left = 608.0
+offset_top = 415.0
+offset_right = 618.0
+offset_bottom = 495.0
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D2"]
+position = Vector2(699, 466)
+shape = SubResource("RectangleShape2D_e71vb")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D2"]
+offset_left = 694.0
+offset_top = 415.0
+offset_right = 704.0
+offset_bottom = 519.0
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D3"]
+position = Vector2(387, 320)
+shape = SubResource("RectangleShape2D_rnkwl")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D3"]
+offset_left = 347.0
+offset_top = 315.0
+offset_right = 427.0
+offset_bottom = 325.0
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D4"]
+position = Vector2(766, 324)
+shape = SubResource("RectangleShape2D_vke2r")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D4"]
+offset_left = 751.0
+offset_top = 319.0
+offset_right = 781.0
+offset_bottom = 329.0
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D5"]
+position = Vector2(751, 451.25)
+shape = SubResource("RectangleShape2D_uit24")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D5"]
+offset_left = 746.0
+offset_top = 351.0
+offset_right = 756.0
+offset_bottom = 544.0
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D6"]
+position = Vector2(422, 290)
+shape = SubResource("RectangleShape2D_ruth0")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D6"]
+offset_left = 417.0
+offset_top = 265.0
+offset_right = 427.0
+offset_bottom = 315.0
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D7"]
+position = Vector2(727, 545)
+shape = SubResource("RectangleShape2D_rm4vd")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D7"]
+offset_left = 722.0
+offset_top = 510.0
+offset_right = 732.0
+offset_bottom = 580.0
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D8"]
+position = Vector2(743.5, 548)
+shape = SubResource("RectangleShape2D_pjyto")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D8"]
+offset_left = 731.0
+offset_top = 543.0
+offset_right = 756.0
+offset_bottom = 553.0
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D9"]
+position = Vector2(629, 514)
+shape = SubResource("RectangleShape2D_sm6fg")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D9"]
+offset_left = 554.0
+offset_top = 509.0
+offset_right = 704.0
+offset_bottom = 519.0
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D10"]
+position = Vector2(445, 514)
+shape = SubResource("RectangleShape2D_b17eg")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D10"]
+offset_left = 360.0
+offset_top = 509.0
+offset_right = 530.0
+offset_bottom = 519.0
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D11"]
+position = Vector2(550, 548)
+shape = SubResource("RectangleShape2D_ntx8l")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D11"]
+offset_left = 395.0
+offset_top = 543.0
+offset_right = 704.0
+offset_bottom = 553.0
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D12"]
+position = Vector2(419, 433)
+shape = SubResource("RectangleShape2D_uatky")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D12"]
+offset_left = 364.0
+offset_top = 428.0
+offset_right = 484.0
+offset_bottom = 438.0
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D13"]
+position = Vector2(525, 468)
+shape = SubResource("RectangleShape2D_rqtf5")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D13"]
+offset_left = 520.0
+offset_top = 417.0
+offset_right = 530.0
+offset_bottom = 519.0
+
+[node name="StaticBody2D14" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D14"]
+position = Vector2(434, 484)
+shape = SubResource("RectangleShape2D_1vm84")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D14"]
+offset_left = 384.0
+offset_top = 479.0
+offset_right = 484.0
+offset_bottom = 489.0
+
+[node name="StaticBody2D20" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D20"]
+position = Vector2(365, 545)
+shape = SubResource("RectangleShape2D_wu3dr")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D20"]
+offset_left = 360.0
+offset_top = 509.0
+offset_right = 370.0
+offset_bottom = 580.0
+
+[node name="StaticBody2D21" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D21"]
+position = Vector2(579, 456)
+shape = SubResource("RectangleShape2D_cyx1q")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D21"]
+offset_left = 574.0
+offset_top = 426.0
+offset_right = 584.0
+offset_bottom = 486.0
+
+[node name="StaticBody2D22" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D22"]
+position = Vector2(352, 310)
+shape = SubResource("RectangleShape2D_0dhbp")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D22"]
+offset_left = 347.0
+offset_top = 295.0
+offset_right = 357.0
+offset_bottom = 325.0
+
+[node name="StaticBody2D23" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D23"]
+position = Vector2(424, 458)
+shape = SubResource("RectangleShape2D_jx0wj")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D23"]
+offset_left = 364.0
+offset_top = 453.0
+offset_right = 484.0
+offset_bottom = 463.0
+
+[node name="StaticBody2D24" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D24"]
+position = Vector2(655, 453)
+shape = SubResource("RectangleShape2D_kkkcx")
+
+[node name="ColorRect" type="ColorRect" parent="Walls/StaticBody2D24"]
+offset_left = 650.0
+offset_top = 425.0
+offset_right = 660.0
+offset_bottom = 480.0
+
+[node name="Goal" type="Area2D" parent="."]
+position = Vector2(730, 540)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal"]
+position = Vector2(40, 27)
+shape = SubResource("RectangleShape2D_272bh")
+
+[node name="ColorRect" type="ColorRect" parent="Goal"]
+offset_left = 32.0
+offset_top = 19.0
+offset_right = 48.0
+offset_bottom = 35.0
+color = Color(0.00784314, 0.490196, 0.0588235, 1)
+
+[node name="Danger" type="Area2D" parent="."]
+position = Vector2(400, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Danger"]
+position = Vector2(-7, -4)
+shape = SubResource("RectangleShape2D_5vw27")
+
+[node name="ColorRect" type="ColorRect" parent="Danger"]
+offset_left = -15.0
+offset_top = -12.0
+offset_right = 1.0
+offset_bottom = 4.0
+color = Color(0.643137, 0, 0.0823529, 0.878431)
+
+[node name="Msg" type="CanvasLayer" parent="."]
+offset = Vector2(400, 0)
+transform = Transform2D(1, 0, 0, 1, 400, 0)
+
+[node name="TimerLabel" type="Label" parent="Msg"]
+offset_left = -32.0
+offset_top = 635.0
+offset_right = 11.0
+offset_bottom = 684.0
+text = "Time:
+"
+
+[node name="CanvasLayerUI" type="CanvasLayer" parent="."]
+
+[node name="StoryPopup" type="Panel" parent="CanvasLayerUI"]
+offset_left = 883.0
+offset_top = 151.0
+offset_right = 1183.0
+offset_bottom = 451.0
+
+[node name="Label" type="Label" parent="CanvasLayerUI/StoryPopup"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "jfjggccmcmmcfffffffffffffffffffffffffffff
+ffv
+v
+f
+gggf
+
+GOOD LUCK!
+"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayerUI/StoryPopup"]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 318.0
+offset_right = 161.0
+offset_bottom = 349.0
+text = "OK"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayerUI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 881.0
+offset_top = 149.0
+offset_right = -99.0
+offset_bottom = -271.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0220594, 0.0208118, 0.0240756, 0.00392157)
+
+[node name="WinPopup" type="Panel" parent="CanvasLayerUI"]
+offset_left = 411.0
+offset_top = 181.0
+offset_right = 866.0
+offset_bottom = 529.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h2yge")
+
+[node name="Label" type="Label" parent="CanvasLayerUI/WinPopup"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 23.0
+offset_right = 432.0
+offset_bottom = 306.0
+text = "Mission Update:
+Congratulations, Agent.
+
+The One piece has been successfully retrieved.
+
+But the operation is far from over.
+Three targets remain.
+
+Stay sharp.
+Code: 101804"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="Button" type="Button" parent="CanvasLayerUI/WinPopup"]
+layout_mode = 0
+offset_left = 215.0
+offset_top = 311.0
+offset_right = 252.0
+offset_bottom = 342.0
+text = "Exit"
+
+[node name="GameTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="CanvasLayerBG" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayerBG"]
+offset_left = -47.0
+offset_top = -22.0
+offset_right = 1489.0
+offset_bottom = 1002.0
+texture = ExtResource("3_h2yge")
+
+[connection signal="pressed" from="CanvasLayerUI/StoryPopup/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayerUI/WinPopup/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayerUI/WinPopup/Button" to="." method="_on_win_button_pressed"]
