@@ -12,6 +12,7 @@ func _ready():
 	$UI/Timer.hide()
 	$UI/Ammo.hide()
 	$UI/Reload.hide()
+	$UI/Code.hide()
 	get_tree().paused = true
 
 func _get_start_text() -> String:
@@ -23,7 +24,6 @@ Meteors to destroy: %d
 Bullets per magazine: %d
 Time between shots: %.1f seconds
 Reload time: %.1f seconds
-f
 Press F to Start""" % [time_left, total_meteors, player.magazine_size, player.shoot_cooldown, player.reload_time]
 
 func start_game():
@@ -57,6 +57,7 @@ func victory():
 	$UI/Timer.hide()
 	$UI/Ammo.hide()
 	$UI/Reload.hide()
+	$UI/Code.show()
 	get_tree().paused = true
 
 func update_ui():
