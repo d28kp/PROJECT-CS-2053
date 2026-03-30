@@ -7,6 +7,7 @@ extends Node2D
 @onready var story_popup = $CanvasLayerUI/StoryPopup
 @onready var win_popup = $CanvasLayerUI/WinPopup
 @onready var overlay = $CanvasLayerUI/ColorRect
+@onready var music = $BackgroundMusic
 
 var game_over := false
 var game_started := false
@@ -71,4 +72,5 @@ func _on_danger_body_entered(body):
 		get_tree().reload_current_scene()
 
 func _on_win_button_pressed():
+	music.stop()
 	get_tree().reload_current_scene()
