@@ -1,9 +1,7 @@
-[gd_scene load_steps=80 format=3 uid="uid://cwyllhjyef1u"]
+[gd_scene load_steps=78 format=3 uid="uid://cwyllhjyef1u"]
 
-[ext_resource type="Script" uid="uid://c6w57o26knrya" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://cnovjb8l6fudw" path="res://player.gd" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://cen3dxqonfn0" path="res://FoogyMazeBackground.png" id="3_h2yge"]
-[ext_resource type="AudioStream" uid="uid://dcflf36ae2jvp" path="res://BGsound.mp3" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://cen3dxqonfn0" path="res://FoogyMazeBackground.png" id="1_b0ipy"]
+[ext_resource type="AudioStream" uid="uid://dcflf36ae2jvp" path="res://BGsound.mp3" id="2_dx6h8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
 size = Vector2(10, 10)
@@ -230,14 +228,12 @@ size = Vector2(15, 15)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0.365897, 0.11598, 0.118094, 1)
 
-[node name="Main" type="Node2D"]
-script = ExtResource("1_0xm2m")
+[node name="level-2" type="Node2D"]
 metadata/_edit_vertical_guides_ = [11.0]
 metadata/_edit_horizontal_guides_ = [-64148.0, 20.0]
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(50, 50)
-script = ExtResource("1_ig7tw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("RectangleShape2D_7dm0k")
@@ -1484,10 +1480,10 @@ offset_left = -47.0
 offset_top = -22.0
 offset_right = 1489.0
 offset_bottom = 1002.0
-texture = ExtResource("3_h2yge")
+texture = ExtResource("1_b0ipy")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_1bvp3")
+stream = ExtResource("2_dx6h8")
 autoplay = true
 
 [connection signal="pressed" from="CanvasLayerUI/StoryPopup/Button" to="." method="_on_button_pressed"]
