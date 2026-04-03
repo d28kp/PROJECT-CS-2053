@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://7rvo3dfq2sj8"]
+[gd_scene load_steps=2 format=3 uid="uid://7rvo3dfq2sj8"]
+
+[ext_resource type="PackedScene" uid="uid://cgoxp07elt5pm" path="res://Scenes/Level-2/level-2.tscn" id="1_wq2n6"]
 
 [node name="HopefullyMain" type="Node2D"]
+
+[node name="level-2" parent="." instance=ExtResource("1_wq2n6")]
