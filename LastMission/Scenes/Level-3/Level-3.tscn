@@ -52,7 +52,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [node name="Level-3" type="Node2D"]
-position = Vector2(-2, -19)
+position = Vector2(0, -19)
 script = ExtResource("1_fsoaa")
 
 [node name="Map" type="Node2D" parent="."]
@@ -253,13 +253,13 @@ shape = SubResource("CircleShape2D_tree_blocker")
 position = Vector2(60, 24)
 
 [node name="StartMarker" type="Marker2D" parent="."]
-position = Vector2(630, 656)
+position = Vector2(631, 676)
 
 [node name="GoalMarker" type="Marker2D" parent="."]
 position = Vector2(692, 75)
 
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(629, 649)
+position = Vector2(629, 672)
 scale = Vector2(0.519999, 0.520001)
 collision_mask = 2
 script = ExtResource("4_1cvpj")

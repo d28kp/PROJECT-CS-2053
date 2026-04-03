@@ -12,10 +12,10 @@ const CAR_BODY_SIZE := Vector2(80.0, 28.0)
 const MAP_PIXEL_BLOCK := 6.0
 
 
-const R1_LANE_TOP := 160.0    
+const R1_LANE_TOP := 140.0    
 const R1_LANE_BOTTOM := 204.0 
 
-const R2_LANE_TOP := 350.0    
+const R2_LANE_TOP := 340.0    
 const R2_LANE_BOTTOM := 398.0 
 
 const R3_LANE_TOP := 504.0    
