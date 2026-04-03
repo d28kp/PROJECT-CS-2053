@@ -56,7 +56,8 @@ position = Vector2(-2, -19)
 script = ExtResource("1_fsoaa")
 
 [node name="Map" type="Node2D" parent="."]
-scale = Vector2(0.911402, 1)
+position = Vector2(5, -7)
+scale = Vector2(1.0314, 1.08)
 
 [node name="Sprite2D" type="Sprite2D" parent="Map"]
 texture_filter = 1
@@ -249,6 +250,7 @@ position = Vector2(0, -6)
 shape = SubResource("CircleShape2D_tree_blocker")
 
 [node name="CarContainer" type="Node2D" parent="."]
+position = Vector2(6, 19)
 
 [node name="StartMarker" type="Marker2D" parent="."]
 position = Vector2(576, 651)
@@ -299,10 +301,10 @@ text = "Score: 0 "
 [node name="RulesPopup" type="CanvasLayer" parent="."]
 
 [node name="Dim" type="ColorRect" parent="RulesPopup"]
-offset_left = -81.0
-offset_top = -50.0
-offset_right = 1199.0
-offset_bottom = 670.0
+offset_left = -101.0
+offset_top = -2.0
+offset_right = 1179.0
+offset_bottom = 718.0
 scale = Vector2(1.08, 1)
 color = Color(0.0196078, 0.0196078, 0.0392157, 0.52)
 
