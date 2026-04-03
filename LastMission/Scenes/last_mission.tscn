@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://d0k2p80ctafkd"]
+[gd_scene load_steps=2 format=3 uid="uid://d0k2p80ctafkd"]
+
+[ext_resource type="PackedScene" uid="uid://cgoxp07elt5pm" path="res://Scenes/Level-2/level-2.tscn" id="1_3gbvf"]
 
 [node name="LastMission" type="Node2D"]
+
+[node name="level-2" parent="." instance=ExtResource("1_3gbvf")]

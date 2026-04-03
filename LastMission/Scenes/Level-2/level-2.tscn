@@ -1,9 +1,9 @@
-[gd_scene load_steps=80 format=3 uid="uid://cwyllhjyef1u"]
+[gd_scene load_steps=80 format=3 uid="uid://cgoxp07elt5pm"]
 
-[ext_resource type="Script" uid="uid://noj400spgg73" path="res://level-2.gd" id="1_4ojds"]
-[ext_resource type="Texture2D" uid="uid://cen3dxqonfn0" path="res://FoogyMazeBackground.png" id="1_b0ipy"]
-[ext_resource type="AudioStream" uid="uid://dcflf36ae2jvp" path="res://BGsound.mp3" id="2_dx6h8"]
-[ext_resource type="Script" uid="uid://2n3edvlejtck" path="res://player.gd" id="2_grixr"]
+[ext_resource type="Script" uid="uid://b5olpxa7ewi6h" path="res://Scripts/Level-2/level-2.gd" id="1_7ikm7"]
+[ext_resource type="Texture2D" uid="uid://cen3dxqonfn0" path="res://Assets/Level-2/FoogyMazeBackground.png" id="1_b0ipy"]
+[ext_resource type="Script" uid="uid://75h5nns1jyje" path="res://Scripts/Level-2/playerL2.gd" id="2_7ikm7"]
+[ext_resource type="AudioStream" uid="uid://dcflf36ae2jvp" path="res://Assets/Level-2/BGsound.mp3" id="2_dx6h8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
 size = Vector2(10, 10)
@@ -231,13 +231,13 @@ size = Vector2(15, 15)
 bg_color = Color(0.365897, 0.11598, 0.118094, 1)
 
 [node name="level-2" type="Node2D"]
-script = ExtResource("1_4ojds")
+script = ExtResource("1_7ikm7")
 metadata/_edit_vertical_guides_ = [11.0]
 metadata/_edit_horizontal_guides_ = [-64148.0, 20.0]
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(50, 50)
-script = ExtResource("2_grixr")
+script = ExtResource("2_7ikm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("RectangleShape2D_7dm0k")
