@@ -1,0 +1,8 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1775007989
+BGsound.mp3::AudioStreamMP3/AudioStreamMP3::7310639961564781013::1774921144::1774923914::1::::<><><>0<>0<>3f7dce4788695b1c219414e79ef9a44b<>res://.godot/imported/BGsound.mp3-2e3a01ac196d82661ed0ed98be72adfe.mp3str::
+FoogyMazeBackground.png::CompressedTexture2D/CompressedTexture2D::149474715274349679::1774921145::1774923915::1::::<><><>0<>0<>9a2eec5ef60edafbf9aa4471e1d15497<>res://.godot/imported/FoogyMazeBackground.png-1401e9b4162654c2315f279baaba7342.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::8072664267788966760::1774921145::1774923914::1::::<><><>0<>0<>390b521ce3f6a864d5ec727bc4b72ceb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+level-2.gd::GDScript/GDScript::941955849351388564::1774921145::0::1::::<>Node2D<><>0<>0<><>::
+level-2.tscn::PackedScene::187271438436366108::1774991527::0::1::::<><><>0<>0<><>::uid://cen3dxqonfn0::::res://FoogyMazeBackground.png<>uid://dcflf36ae2jvp::::res://BGsound.mp3
+player.gd::GDScript/GDScript::1923643098519185986::1774921145::0::1::::<>CharacterBody2D<><>0<>0<><>::
