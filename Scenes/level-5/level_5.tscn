@@ -1046,15 +1046,15 @@ position = Vector2(148, 219)
 
 [node name="Trap15" parent="." instance=ExtResource("7_qhsfq")]
 position = Vector2(23, 162)
-rotation = 1.5707964
+rotation = 1.5708
 
 [node name="Trap16" parent="." instance=ExtResource("7_qhsfq")]
 position = Vector2(23, 201)
-rotation = 1.5707964
+rotation = 1.5708
 
 [node name="Trap17" parent="." instance=ExtResource("7_qhsfq")]
 position = Vector2(22, 241)
-rotation = 1.5707964
+rotation = 1.5708
 
 [node name="Trap18" parent="." instance=ExtResource("7_qhsfq")]
 position = Vector2(921, 218)
