@@ -1491,5 +1491,5 @@ stream = ExtResource("2_dx6h8")
 autoplay = true
 
 [connection signal="pressed" from="CanvasLayerUI/StoryPopup/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="CanvasLayerUI/WinPopup/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayerUI/WinPopup/Button" to="." method="_on_win_button_pressed"]
+[connection signal="pressed" from="CanvasLayerUI/WinPopup/Button" to="." method="_on_button_pressed"]

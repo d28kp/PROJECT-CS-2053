@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://c83a00y68thbb"]
+[gd_scene load_steps=12 format=3 uid="uid://c83a00y68thbb"]
 
 [ext_resource type="Script" uid="uid://7c1uh5ecgiqy" path="res://Scripts/Level-3/gameL3.gd" id="1_fsoaa"]
 [ext_resource type="Texture2D" uid="uid://b3166k25es6l4" path="res://Assets/Level-3/road_0.png" id="2_ooxaj"]
 [ext_resource type="Texture2D" uid="uid://dm3qepj1pdon6" path="res://Assets/Level-3/Screenshot 2026-03-09 145836.png" id="3_c6qac"]
 [ext_resource type="Script" uid="uid://dy1q3mxbhucro" path="res://Scripts/Level-3/playerL3.gd" id="4_1cvpj"]
+[ext_resource type="AudioStream" uid="uid://cg8t0ak8ipnim" path="res://Assets/Level-3/Level3Music.mp3" id="5_1cvpj"]
 
 [sub_resource type="RectangleShape2D" id="CircleShape2D_tree_blocker"]
 size = Vector2(58, 58)
@@ -376,3 +377,4 @@ text = "Tip: Safe zones have trees and rocks!"
 horizontal_alignment = 1
 
 [node name="Level3Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_1cvpj")

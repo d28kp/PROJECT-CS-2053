@@ -6,6 +6,7 @@ extends Node2D
 @onready var start_marker: Marker2D = $StartMarker
 @onready var map_node: Node2D = $Map
 @onready var rules_popup: CanvasLayer = $RulesPopup
+@onready var level3_music: AudioStreamPlayer2D = $Level3Music
 
 const SCREEN_WIDTH := 1280.0
 const CAR_BODY_SIZE := Vector2(80.0, 28.0) 
@@ -45,6 +46,7 @@ func _ready() -> void:
 	player.set_physics_process(false)
 	hud_label.text = "Press R to start"
 	_show_rules_popup()
+	level3_music.finished.connect(_on_level3_music_finished)
 
 func _process(delta: float) -> void:
 	if not game_started:
@@ -64,6 +66,8 @@ func _start_game() -> void:
 	player.set_physics_process(true)
 	rules_popup.visible = false
 	_update_hud()
+	if not level3_music.playing:
+		level3_music.play()
 
 func _handle_spawning(delta: float) -> void:
 	var gap_multiplier = clamp(1.0 - (score * 0.0), 0.0, 1.0)
@@ -214,7 +218,9 @@ func _check_win() -> void:
 			hud_label.text = "3rd fragment: 3"
 			set_process(false)
 			await get_tree().create_timer(2.0).timeout
+			level3_music.stop()
 			get_tree().change_scene_to_file("res://Scenes/Level-4/Level4.tscn")
+			
 
 func _handle_hit() -> void:
 	score = max(0, score - 1)
@@ -230,3 +236,6 @@ func _update_hud() -> void:
 
 func _show_rules_popup() -> void:
 	rules_popup.visible = true
+	
+func _on_level3_music_finished() -> void:
+	level3_music.play()
