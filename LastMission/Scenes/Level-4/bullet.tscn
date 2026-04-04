@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://w56uvupmf1aj"]
+[gd_scene load_steps=4 format=3 uid="uid://bu2y3pmddiqpg"]
 
-[ext_resource type="Texture2D" uid="uid://cbb41d7fgi7oc" path="res://Laser.png" id="1_v7oki"]
-[ext_resource type="Script" uid="uid://d1to121awibyk" path="res://bullet.gd" id="1_v8qja"]
+[ext_resource type="Script" uid="uid://g1ne2d6vxf26" path="res://Scripts/Level-4/bullet.gd" id="1_dbp3k"]
+[ext_resource type="Texture2D" uid="uid://ceyvkhcw50y2b" path="res://Assets/Level-4/Laser.png" id="2_rt411"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v8qja"]
 size = Vector2(20, 79)
@@ -9,12 +9,12 @@ size = Vector2(20, 79)
 [node name="Bullet" type="Area2D"]
 collision_layer = 4
 collision_mask = 2
-script = ExtResource("1_v8qja")
+script = ExtResource("1_dbp3k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = -1.5708
 scale = Vector2(0.404899, 0.255556)
-texture = ExtResource("1_v7oki")
+texture = ExtResource("2_rt411")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_v8qja")

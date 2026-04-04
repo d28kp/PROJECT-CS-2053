@@ -11,7 +11,6 @@ const SCREEN_WIDTH := 1280.0
 const CAR_BODY_SIZE := Vector2(80.0, 28.0) 
 const MAP_PIXEL_BLOCK := 6.0
 
-
 const R1_LANE_TOP := 140.0    
 const R1_LANE_BOTTOM := 204.0 
 
@@ -67,7 +66,7 @@ func _start_game() -> void:
 	_update_hud()
 
 func _handle_spawning(delta: float) -> void:
-	var gap_multiplier = clamp(1.0 - (score * 0.2), 0.2, 1.0)
+	var gap_multiplier = clamp(1.0 - (score * 0.0), 0.0, 1.0)
 	
 	for i in range(LANE_CONFIG.size()):
 		lane_timers[i] -= delta
@@ -194,7 +193,6 @@ func _apply_map_pixel_style() -> void:
 			sprite.material = map_pixel_material
 
 func _move_cars(delta: float) -> void:
-
 	var speed_multiplier = 1.0 + (score * 0.6)
 	
 	for car in car_container.get_children():
@@ -214,7 +212,9 @@ func _check_win() -> void:
 		
 		if score >= 5:
 			hud_label.text = "3rd fragment: 3"
-			set_process(false) 
+			set_process(false)
+			await get_tree().create_timer(2.0).timeout
+			get_tree().change_scene_to_file("res://Scenes/Level-4/Level4.tscn")
 
 func _handle_hit() -> void:
 	score = max(0, score - 1)

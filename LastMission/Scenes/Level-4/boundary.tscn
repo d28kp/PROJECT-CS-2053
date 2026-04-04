@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8xk2m1n7qpwa"]
+[gd_scene load_steps=5 format=3 uid="uid://clkriyq8e6opv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_left"]
 size = Vector2(20, 760)
@@ -15,36 +15,32 @@ size = Vector2(1320, 20)
 [node name="Boundary" type="Node2D"]
 
 [node name="LeftWall" type="StaticBody2D" parent="."]
-collision_layer = 1
-collision_mask = 0
 position = Vector2(-10, 360)
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
 position = Vector2(10, 0)
 shape = SubResource("RectangleShape2D_left")
 
 [node name="RightWall" type="StaticBody2D" parent="."]
-collision_layer = 1
-collision_mask = 0
 position = Vector2(1290, 360)
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
 position = Vector2(-10, 0)
 shape = SubResource("RectangleShape2D_right")
 
 [node name="TopWall" type="StaticBody2D" parent="."]
-collision_layer = 1
-collision_mask = 0
 position = Vector2(640, -10)
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall"]
 position = Vector2(0, 10)
 shape = SubResource("RectangleShape2D_top")
 
 [node name="BottomWall" type="StaticBody2D" parent="."]
-collision_layer = 1
-collision_mask = 0
 position = Vector2(640, 730)
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomWall"]
 position = Vector2(0, -10)

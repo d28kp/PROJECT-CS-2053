@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceyvkhcw50y2b"
-path="res://.godot/imported/Laser.png-79d38aef22b4233e676af6b4569986ca.ctex"
+uid="uid://yhx1x6mfdsrt"
+path="res://.godot/imported/Explosion.png-d8c3520f5c439ca8d0fcc2d8e80fdec3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level-4/Laser.png"
-dest_files=["res://.godot/imported/Laser.png-79d38aef22b4233e676af6b4569986ca.ctex"]
+source_file="res://Assets/Level-4/Explosion.png"
+dest_files=["res://.godot/imported/Explosion.png-d8c3520f5c439ca8d0fcc2d8e80fdec3.ctex"]
 
 [params]
 
