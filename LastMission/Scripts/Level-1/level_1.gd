@@ -82,8 +82,7 @@ func _level_complete():
 	$SpawnTimer.stop()
 	for ball in get_tree().get_nodes_in_group("balls"):
 		ball.set_physics_process(false)
-	clue_label.text = " DEFUSED! Code Fragment: 7
-						 		IT GETS DIFFICULT FROM HERE !! YOUR ONTO THE NEXT LEVEL"
+	clue_label.text = "DEFUSED! Code Fragment: 7\nIT GETS DIFFICULT FROM HERE!! YOU'RE ONTO THE NEXT LEVEL"
 	clue_label.visible = true
 	await get_tree().create_timer(3.0).timeout
-	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Level-2/level-2.tscn")

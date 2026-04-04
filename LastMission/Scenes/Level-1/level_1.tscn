@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://dd3wd4fag6xdl"]
 
-[ext_resource type="PackedScene" uid="uid://c858v3o716qm5" path="res://player.tscn" id="1_3hls8"]
-[ext_resource type="Script" uid="uid://dipjer7nkyti" path="res://level_1.gd" id="1_hbghi"]
-[ext_resource type="PackedScene" uid="uid://ck3iu05susmku" path="res://ball.tscn" id="2_hn12h"]
-[ext_resource type="Texture2D" uid="uid://bdis4aqw7cd0o" path="res://assets/sprites/Reference-Image.png" id="4_ihfcg"]
+[ext_resource type="PackedScene" uid="uid://c858v3o716qm5" path="res://Scenes/Level-1/player.tscn" id="1_3hls8"]
+[ext_resource type="Script" uid="uid://bb5kqwo4ks0wn" path="res://Scripts/Level-1/level_1.gd" id="1_tsjof"]
+[ext_resource type="PackedScene" uid="uid://ck3iu05susmku" path="res://Scenes/Level-1/ball.tscn" id="2_hn12h"]
+[ext_resource type="Texture2D" uid="uid://bdis4aqw7cd0o" path="res://Assets/Level-1/sprites/Reference-Image.png" id="4_ihfcg"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ihfcg"]
 bounce = 0.8
@@ -32,7 +32,7 @@ font_size = 72
 size = Vector2(20, 720)
 
 [node name="LEVEL1" type="Node2D"]
-script = ExtResource("1_hbghi")
+script = ExtResource("1_tsjof")
 ball_scene = ExtResource("2_hn12h")
 
 [node name="Background" type="Sprite2D" parent="."]

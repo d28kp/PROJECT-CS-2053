@@ -1,10 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://7rvo3dfq2sj8"]
+[gd_scene load_steps=2 format=3 uid="uid://7rvo3dfq2sj8"]
 
-[ext_resource type="PackedScene" uid="uid://cgoxp07elt5pm" path="res://Scenes/Level-2/level-2.tscn" id="1_wq2n6"]
-[ext_resource type="PackedScene" uid="uid://c83a00y68thbb" path="res://Scenes/Level-3/Level-3.tscn" id="2_48hkj"]
+[ext_resource type="PackedScene" uid="uid://6f2s0ramtjmq" path="res://Scenes/Level-1/menu.tscn" id="1_v455c"]
 
 [node name="HopefullyMain" type="Node2D"]
 
-[node name="level-2" parent="." instance=ExtResource("1_wq2n6")]
-
-[node name="Level-3" parent="." instance=ExtResource("2_48hkj")]
+[node name="MENU" parent="." instance=ExtResource("1_v455c")]

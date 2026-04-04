@@ -73,4 +73,4 @@ func _on_danger_body_entered(body):
 
 func _on_win_button_pressed():
 	music.stop()
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_file("res://Scenes/Level-3/level-3.tscn")

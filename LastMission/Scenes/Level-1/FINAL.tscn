@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://6swwxbh00gsg"]
 
-[ext_resource type="Script" uid="uid://7lc7fy0lkkmc" path="res://final.gd" id="1_sv7e0"]
+[ext_resource type="Script" uid="uid://re85ein40xmf" path="res://Scripts/Level-1/final.gd" id="1_bbm0a"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_48c1l"]
 font_size = 48
@@ -21,7 +21,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_sv7e0")
+script = ExtResource("1_bbm0a")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
