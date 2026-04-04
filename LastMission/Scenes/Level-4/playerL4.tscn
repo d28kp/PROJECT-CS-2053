@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcm4140uj7522"]
+
+[ext_resource type="Script" uid="uid://bcar3ch8nubn6" path="res://Scripts/Level-4/playerL4.gd" id="1_dv58l"]
+[ext_resource type="Texture2D" uid="uid://bt18wr3fp143x" path="res://Assets/Level-4/Spaceship.png" id="2_f1ja2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
+radius = 54.0093
+
+[node name="Player" type="CharacterBody2D" groups=["bullet", "player"]]
+collision_mask = 2
+script = ExtResource("1_dv58l")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(124, 128)
+shape = SubResource("CircleShape2D_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(123, 121)
+scale = Vector2(0.263055, 0.210449)
+texture = ExtResource("2_f1ja2")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(112, 87)
