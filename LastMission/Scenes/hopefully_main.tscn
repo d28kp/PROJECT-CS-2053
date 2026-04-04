@@ -4,4 +4,11 @@
 
 [node name="HopefullyMain" type="Node2D"]
 
+<<<<<<< HEAD
 [node name="MENU" parent="." instance=ExtResource("1_v455c")]
+=======
+[node name="level-2" parent="." instance=ExtResource("1_wq2n6")]
+
+[node name="Level-3" parent="." instance=ExtResource("2_48hkj")]
+position = Vector2(-1, -3)
+>>>>>>> 968b30b3a92487ca00cbe9bf3085370d249f1129

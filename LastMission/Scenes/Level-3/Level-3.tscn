@@ -52,7 +52,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [node name="Level-3" type="Node2D"]
-position = Vector2(-2, -19)
+position = Vector2(0, -19)
 script = ExtResource("1_fsoaa")
 
 [node name="Map" type="Node2D" parent="."]
@@ -250,16 +250,16 @@ position = Vector2(0, -6)
 shape = SubResource("CircleShape2D_tree_blocker")
 
 [node name="CarContainer" type="Node2D" parent="."]
-position = Vector2(6, 19)
+position = Vector2(60, 24)
 
 [node name="StartMarker" type="Marker2D" parent="."]
-position = Vector2(576, 651)
+position = Vector2(631, 676)
 
 [node name="GoalMarker" type="Marker2D" parent="."]
-position = Vector2(638, 70)
+position = Vector2(692, 75)
 
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(575, 644)
+position = Vector2(629, 672)
 scale = Vector2(0.519999, 0.520001)
 collision_mask = 2
 script = ExtResource("4_1cvpj")
@@ -291,28 +291,28 @@ position = Vector2(-2, 4)
 shape = SubResource("RectangleShape2D_player")
 
 [node name="HUD" type="Label" parent="."]
-offset_left = 697.0
-offset_top = 633.0
-offset_right = 1222.0
-offset_bottom = 676.0
+offset_left = 751.0
+offset_top = 638.0
+offset_right = 1276.0
+offset_bottom = 681.0
 theme_override_font_sizes/font_size = 26
 text = "Score: 0 "
 
 [node name="RulesPopup" type="CanvasLayer" parent="."]
 
 [node name="Dim" type="ColorRect" parent="RulesPopup"]
-offset_left = -101.0
-offset_top = -2.0
-offset_right = 1179.0
-offset_bottom = 718.0
+offset_left = -47.0
+offset_top = 3.0
+offset_right = 1233.0
+offset_bottom = 723.0
 scale = Vector2(1.08, 1)
 color = Color(0.0196078, 0.0196078, 0.0392157, 0.52)
 
 [node name="Panel" type="Panel" parent="RulesPopup"]
-offset_left = 194.0
-offset_top = 99.0
-offset_right = 1074.0
-offset_bottom = 499.0
+offset_left = 248.0
+offset_top = 104.0
+offset_right = 1128.0
+offset_bottom = 504.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_rules_panel")
 
 [node name="TitleBadge" type="Panel" parent="RulesPopup/Panel"]
