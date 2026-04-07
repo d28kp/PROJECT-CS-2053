@@ -4,6 +4,7 @@ var time_left = 90
 var meteors_destroyed = 0
 var total_meteors = 12
 var game_started = false
+@onready var music = $BackgroundMusic
 
 func _ready():
 	$UI/StartLabel.text = _get_start_text()
@@ -53,6 +54,7 @@ func game_over(msg):
 	get_tree().paused = true
 
 func victory():
+	music.stop()
 	$UI/Msg.text = "YOU WIN!\n"
 	$UI/Msg.show()
 	$UI/Timer.hide()

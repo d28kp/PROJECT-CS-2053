@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c4jtb8d2aenqf"]
+[gd_scene load_steps=7 format=3 uid="uid://c4jtb8d2aenqf"]
 
 [ext_resource type="Script" uid="uid://b21nb2u5pq6b8" path="res://Scripts/Level-4/gameL4.gd" id="1_5wx84"]
 [ext_resource type="PackedScene" uid="uid://bcm4140uj7522" path="res://Scenes/Level-4/playerL4.tscn" id="1_e2o6t"]
 [ext_resource type="Script" uid="uid://cinfn4anfr45p" path="res://Scripts/Level-4/meteor_spawn.gd" id="3_63tck"]
 [ext_resource type="Texture2D" uid="uid://c6kqppdox3c4t" path="res://Assets/Level-4/Space.jpg" id="4_kgofy"]
 [ext_resource type="PackedScene" uid="uid://6lnlqpyyqkap" path="res://Scenes/Level-4/meteor.tscn" id="5_kgofy"]
+[ext_resource type="AudioStream" uid="uid://dhelxlhm58rts" path="res://Assets/Level-4/Level4Music.mp3" id="6_57slr"]
 
 [node name="Level4" type="Node2D"]
 process_mode = 3
@@ -83,5 +84,9 @@ text = "4th Fragment: X
 "
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_57slr")
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
