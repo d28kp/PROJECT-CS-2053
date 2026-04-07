@@ -52,7 +52,7 @@ offset_left = 450.0
 offset_top = 360.0
 offset_right = 750.0
 offset_bottom = 415.0
-text = "LEVEL 2 — 🔒 LOCKED"
+text = "LEVEL 2 — Maze"
 
 [node name="LEVEL3" type="Button" parent="."]
 layout_mode = 0
@@ -61,7 +61,7 @@ offset_top = 420.0
 offset_right = 750.0
 offset_bottom = 475.0
 disabled = true
-text = "LEVEL 3 — 🔒 LOCKED"
+text = "LEVEL 3 — Cross the Road"
 
 [node name="LEVEL4" type="Button" parent="."]
 layout_mode = 0
@@ -70,7 +70,7 @@ offset_top = 480.0
 offset_right = 750.0
 offset_bottom = 535.0
 disabled = true
-text = "LEVEL 4 — 🔒 LOCKED"
+text = "LEVEL 4 — Shoot the Meteors"
 
 [node name="LEVEL5" type="Button" parent="."]
 layout_mode = 0
@@ -79,4 +79,4 @@ offset_top = 540.0
 offset_right = 750.0
 offset_bottom = 595.0
 disabled = true
-text = "LEVEL 5 — 🔒 LOCKED"
+text = "LEVEL 5 — Obstacle Run"

@@ -36,7 +36,7 @@ func take_damage():
 	lives -= 1
 	emit_signal("lives_changed", lives)
 	if lives <= 0:
-		get_tree().change_scene_to_file("res://menu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Level-1/menu.tscn")
 	else:
 		_respawn()
 
