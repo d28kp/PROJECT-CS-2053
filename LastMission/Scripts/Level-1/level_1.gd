@@ -85,4 +85,5 @@ func _level_complete():
 	clue_label.text = "DEFUSED! Code Fragment: 7\nIT GETS DIFFICULT FROM HERE!! YOU'RE ONTO THE NEXT LEVEL"
 	clue_label.visible = true
 	await get_tree().create_timer(3.0).timeout
-	get_tree().change_scene_to_file("res://Scenes/Level-2/level-2.tscn")
+	ProgressData.level_1_completed = true
+	get_tree().change_scene_to_file("res://Scenes/Level-1/menu.tscn")

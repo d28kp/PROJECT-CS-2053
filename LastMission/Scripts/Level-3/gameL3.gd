@@ -219,7 +219,8 @@ func _check_win() -> void:
 			set_process(false)
 			await get_tree().create_timer(2.0).timeout
 			level3_music.stop()
-			get_tree().change_scene_to_file("res://Scenes/Level-4/Level4.tscn")
+			ProgressData.level_3_completed = true
+			get_tree().change_scene_to_file("res://Scenes/Level-1/menu.tscn")
 			
 
 func _handle_hit() -> void:

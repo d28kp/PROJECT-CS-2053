@@ -60,7 +60,8 @@ func victory():
 	$UI/Reload.hide()
 	$UI/Code.show()
 	await get_tree().create_timer(3.0).timeout  
-	get_tree().change_scene_to_file("res://Scenes/Level-5/level_5.tscn")
+	ProgressData.level_4_completed = true
+	get_tree().change_scene_to_file("res://Scenes/Level-1/menu.tscn")
 
 func update_ui():
 	$UI/Timer.text = "Time: " + str(time_left)

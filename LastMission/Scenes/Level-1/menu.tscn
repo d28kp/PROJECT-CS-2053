@@ -52,7 +52,6 @@ offset_left = 450.0
 offset_top = 360.0
 offset_right = 750.0
 offset_bottom = 415.0
-disabled = true
 text = "LEVEL 2 — 🔒 LOCKED"
 
 [node name="LEVEL3" type="Button" parent="."]
@@ -81,5 +80,3 @@ offset_right = 750.0
 offset_bottom = 595.0
 disabled = true
 text = "LEVEL 5 — 🔒 LOCKED"
-
-[connection signal="pressed" from="LEVEL1" to="." method="_on_start_pressed"]
