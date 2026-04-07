@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cjhihp6vmpgpt"]
+[gd_scene load_steps=20 format=4 uid="uid://cjhihp6vmpgpt"]
 
 [ext_resource type="Texture2D" uid="uid://bgxh3ucgu1s7s" path="res://Assets/Level-5/Buildings.png" id="1_t3h5c"]
 [ext_resource type="Script" uid="uid://bjyhqq8ak3rwb" path="res://Scripts/Level-5/level_5.gd" id="1_tac4s"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cb4xjsp52wtml" path="res://Assets/Level-5/lab tiles spritesheet.png" id="4_br4so"]
 [ext_resource type="PackedScene" uid="uid://cnfthbuj8nus2" path="res://Scenes/Level-5/playerL5.tscn" id="5_8ons7"]
 [ext_resource type="PackedScene" uid="uid://8wkyc114sogw" path="res://Scenes/Level-5/trap.tscn" id="7_qhsfq"]
+[ext_resource type="AudioStream" uid="uid://cd660rptjlnxc" path="res://Assets/Level-5/level5_music.mp3" id="8_y5pxc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_br4so"]
 texture = ExtResource("4_br4so")
@@ -1149,5 +1150,9 @@ without touching any traps.
 Good luck.
 
 Press Space Bar to Start!"
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_y5pxc")
+autoplay = true
 
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]

@@ -39,6 +39,8 @@ func start_game():
 	$Timer.start()
 	$MeteorSpawn.start_spawning()
 	get_tree().paused = false
+	if not music.playing:
+		music.play()
 
 func meteor_destroyed():
 	meteors_destroyed += 1

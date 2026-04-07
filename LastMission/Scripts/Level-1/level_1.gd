@@ -13,6 +13,7 @@ var spawning  = true
 @onready var lives_label = $HUD/LIVES
 @onready var countdown_label = $HUD/Countdown
 @onready var player      = $player
+@onready var music = $BackgroundMusic
 
 func _ready():
 	clue_label.visible = false
@@ -39,6 +40,8 @@ func _start_countdown():
 	player.set_physics_process(true)
 	$SpawnTimer.start()
 	spawning = true
+	if not music.playing:
+		music.play()
 
 func _fade_out_legend():
 	await get_tree().create_timer(4.0).timeout
@@ -78,6 +81,7 @@ func _on_spawn_timer_timeout():
 	ball.launch_toward(aim)
 
 func _level_complete():
+	music.stop()
 	spawning = false
 	$SpawnTimer.stop()
 	for ball in get_tree().get_nodes_in_group("balls"):

@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dd3wd4fag6xdl"]
+[gd_scene load_steps=13 format=3 uid="uid://dd3wd4fag6xdl"]
 
 [ext_resource type="PackedScene" uid="uid://c858v3o716qm5" path="res://Scenes/Level-1/player.tscn" id="1_3hls8"]
 [ext_resource type="Script" uid="uid://bb5kqwo4ks0wn" path="res://Scripts/Level-1/level_1.gd" id="1_tsjof"]
 [ext_resource type="PackedScene" uid="uid://ck3iu05susmku" path="res://Scenes/Level-1/ball.tscn" id="2_hn12h"]
 [ext_resource type="Texture2D" uid="uid://bdis4aqw7cd0o" path="res://Assets/Level-1/sprites/Reference-Image.png" id="4_ihfcg"]
+[ext_resource type="AudioStream" uid="uid://bx1eg7vi70m88" path="res://Assets/Level-1/level1_music.mp3" id="5_5chvm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ihfcg"]
 bounce = 0.8
@@ -120,5 +121,9 @@ position = Vector2(1280, 360)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallRight"]
 shape = SubResource("RectangleShape2D_ihfcg")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_5chvm")
+autoplay = true
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

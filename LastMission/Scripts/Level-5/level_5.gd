@@ -5,6 +5,7 @@ extends Node2D
 @onready var camera = $Camera2D
 @onready var win_label = $WinLabel
 var waiting_to_start := false
+@onready var music = $BackgroundMusic
 
 func _on_fall_zone_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
@@ -12,6 +13,7 @@ func _on_fall_zone_body_entered(body: Node2D) -> void:
 
 func _on_goal_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
+		music.stop()
 		win_label.visible = true
 		player.set_physics_process(false)
 		await get_tree().create_timer(2.0).timeout
@@ -19,6 +21,8 @@ func _on_goal_body_entered(body: Node2D) -> void:
 	
 func _ready():
 	_show_rules()
+	if music.stream: 
+		music.play()
 
 func _show_rules():
 	rules_popup.visible = true

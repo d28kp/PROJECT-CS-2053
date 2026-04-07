@@ -5,6 +5,7 @@ extends Control
 @onready var message_label = $MessageLabel
 @onready var enter_code_label = $EnterCodeLabel
 
+
 func _ready():
 	message_label.text = ""
 	submit_button.pressed.connect(_on_submit_pressed)
