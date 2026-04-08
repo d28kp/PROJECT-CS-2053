@@ -28,6 +28,12 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = false
 
 	move_and_slide()
+	if not is_on_floor():
+		$AnimatedSprite2D.play("jump")
+	elif dir != 0:
+		$AnimatedSprite2D.play("walk")
+	else:
+		$AnimatedSprite2D.play("idle")
 	
 
 func take_damage():
