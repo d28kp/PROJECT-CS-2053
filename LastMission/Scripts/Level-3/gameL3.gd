@@ -70,7 +70,7 @@ func _start_game() -> void:
 		level3_music.play()
 
 func _handle_spawning(delta: float) -> void:
-	var gap_multiplier = clamp(1.0 - (score * 0.0), 0.0, 1.0)
+	var gap_multiplier = clamp(1.0 - (score * 0.2), 0.0, 1.0)
 	
 	for i in range(LANE_CONFIG.size()):
 		lane_timers[i] -= delta
