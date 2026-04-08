@@ -56,7 +56,6 @@ func game_over(msg):
 	get_tree().paused = true
 
 func victory():
-	music.stop()
 	$UI/Msg.text = "YOU WIN!\n"
 	$UI/Msg.show()
 	$UI/Timer.hide()
