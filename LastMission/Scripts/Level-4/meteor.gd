@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 20
+@export var speed = 200
 var direction = Vector2.ZERO
 const CENTER_OFFSET = Vector2(893, 130)
 const MIN_DIRECTION_COMPONENT = 0.4
